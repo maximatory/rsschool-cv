@@ -2,7 +2,7 @@ CV
 
 # Maksim Baranov
 ***
-![my photo]()
+![my photo](./my-photo.jpeg)
 
 
 I have been studying computer programming for several months now. It gives me pleasure, I would like to devote my life to it. My goal is to become a professional web developer.
