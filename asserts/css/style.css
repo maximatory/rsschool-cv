@@ -23,6 +23,11 @@ h2 {
    margin-bottom: 10px;
 }
 
+h3 {
+   font-size: 25px;
+   margin-bottom: 15px;
+}
+
 hr {
    border: 2px solid rgb(0, 0, 0);
    max-width: 70px;
@@ -122,7 +127,7 @@ ul {
 /* footer */
 .ul-footer {
    display: flex;
-   justify-content: space-between;
+   justify-content:space-around;
    align-items: start;
 }
 
@@ -148,6 +153,34 @@ ul {
    margin-right: 20px;
 }
 
+/* портфолио */
+.portfolio {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 30px 0;
+   padding: 0 30px;
+}
+
+.portfolio-description {
+  margin: 10px;
+}
+
+
+.link-portfolio {
+   width: 400px;
+   height: 254px;
+   display: block;
+   background-image: url(../img/bg-portfolio.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-radius: 7px;
+
+}
+
+
+
+/* адаптивная верстка */
 @media (max-width: 800px) {
    main {
       margin-top: 190px;
@@ -168,6 +201,11 @@ ul {
    .section-wrapper {
       justify-content: center;
    }
+
+   .link-portfolio {
+      width: 300px;
+      height: 191px;
+   }
 }
 
 @media (max-width: 550px) {
@@ -183,12 +221,28 @@ ul {
    .photo {
       max-width: 90%;
    }
+
+   .portfolio {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
 }
 
 @media (max-width: 430px) {
    main {
       margin-top: 155px;
    }
+
+   .link-portfolio {
+      width: 250px;
+      height: 159px;
+   }
+
+   .github {
+      margin-right: 25px;
+   }
+
+   
 }
 
 @media (max-width: 385px) {
