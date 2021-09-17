@@ -7,18 +7,19 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Subrayada&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="./style.css">
+   <link rel="stylesheet" href="./asserts/css/style.css">
+   <link rel="stylesheet" href="./asserts/css/github.min.css">
    <title>CV</title>
 </head>
 <body>
    <header>
-      <div class="wrapper header-wrapper">
+      <div class="wrapper">
          <div class="header-text">
             <h1>Maksim Baranov</h1>
             <p>front-end developer</p>
          </div>
          <div class="header-photo">
-            <img class="photo" src="./img/my-photo.png" alt="my-photo">
+            <img class="photo" src="./asserts/img/my-photo.png" alt="my-photo">
          </div>
       </div>
    </header>
@@ -87,16 +88,16 @@
                   </p>
                   <pre>
                      <code>
-                        function testWhile(a) {
-                           let x = 0;
-                           let i = 1;
-                           while (i &lt;= a){
-                              if (i % 2 === 0) {
-                              x = x + i;}
-                           i++;
-                           }
-                           return x;
-                        };  
+function testWhile(a) {
+let x = 0;
+let i = 1;
+while (i &lt;= a){
+   if (i % 2 === 0) {
+      x = x + i;}
+      i++;
+   }
+return x;
+};  
                      </code>
                   </pre>
             </section>
@@ -107,11 +108,13 @@
    <footer>
       <div class="wrapper">
          <ul class="ul-footer">
-            <li><a class="github" href="https://github.com/maximatory"></a></li>
-            <li><p>© 2021</p></li>
-            <li><a class="rsschool" href="https://rs.school/js/"></a></li>
+            <li><a class="github" href="https://github.com/maximatory" target="_blank"></a></li>
+            <li><p>© 2021 by Maksim Baranov</p></li>
+            <li><a class="rsschool" href="https://rs.school/js/" target="_blank"></a></li>
          </ul>
       </div>
    </footer>
+   <script src="./highlight.min.js"></script>
+   <script>hljs.highlightAll();</script>
 </body>
 </html>
